@@ -1,0 +1,15 @@
+--- GPS API.
+-- The GPS Api allows you to locate your device in the minecraft world, using a
+-- modem as paired with 3 or 4 servers.
+-- @module gps
+
+----------
+-- Locates the device using the device's modem. Keep in mind that CC convention
+-- dictates that the z will be the up/down axis, opposed to the Minecraft way
+-- of Y being the up/down axis.
+-- @function locate
+-- @tparam ?|number timeout The timeout to wait for replies.
+-- @tparam ?|bool debug Weather we should print debug messages to the terminal.
+-- @treturn number|nil x The X location of the device, or nil if location couldn't be determined.
+-- @treturn ?|number y The Y location.
+-- @treturn ?|number z The Z location.
