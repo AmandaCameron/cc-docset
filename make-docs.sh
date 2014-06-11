@@ -1,4 +1,4 @@
 #!/bin/bash
 
-ldoc --filter dash.docset .
-ldoc --style ../../dash/common/ --template ../../dash/common/ --dir ./ComputerCraft.docset/Contents/Resources/Documents/ .
+ldoc --filter ldoc-dash.dash.docset .
+ldoc --style ./ldoc-dash --template ./ldoc-dash/ --dir ./ComputerCraft.docset/Contents/Resources/Documents/ .
