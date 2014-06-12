@@ -44,7 +44,7 @@
 
 ----------
 -- Unserialises a string into a table.
--- @fucniton unserialise
+-- @function unserialise
 -- @string data The data to un-serialise.
 -- @treturn table|nil data The data that was unseralised, or nil if it failed.
 
