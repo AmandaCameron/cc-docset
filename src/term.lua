@@ -5,6 +5,33 @@
 -- Triggered when the terminal is resized.
 -- @event term_resize
 
+----------
+-- Fired when a printable character is typed.
+-- @event char
+-- @string character The character that was typed.
+
+----------
+-- Fired when the user clicks on an Advanced Device.
+-- @event mouse_click
+-- @int button The button that was pressed. Left is 1, right is 2.
+-- @int x The X coordinate you were clicked on.
+-- @int y The Y coordinate you were clicked on.
+
+----------
+-- Fired when a user scrolls the mouse wheel on an Advanced Device.
+-- @event mouse_scroll
+-- @int direction The direction of the scroll.
+-- @int x The X location the scroll took place.
+-- @int y The Y location the scroll took place.
+
+----------
+-- Fired when the user drags the mouse with a button pressed on an
+-- Advanced Device.
+-- @event mouse_drag
+-- @int button Mouse Button pressed, 1 for left, 2 for right.
+-- @int x The X that the user dragged to.
+-- @int y The Y that the user dragged to.
+
 ---------
 -- Gets the current terminal.
 -- CC 1.6+
