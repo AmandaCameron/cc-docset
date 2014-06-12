@@ -15,7 +15,7 @@ file = {
 }
 
 function custom_display_name_handler(item, default_handler)
-  if item.type == "function" then
+  if item.type == "function" and item.name:sub(1, 6) ~= "vector" then
     item.name = item.name:gsub(":", ".")
   end
 

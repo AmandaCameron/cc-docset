@@ -23,7 +23,7 @@ function peripheral(db, mod)
 end
 
 module['function'] = function(db, mod, item)
-  if item.name:find(":") then
+  if item.name:find(":") and item.name:sub(1, 6) ~= "vector" then
     db:exec("INSERT OR IGNORE INTO searchIndex(name, type, path) " ..
     "VALUES('" .. item.name:gsub(":", ".") .. "', 'Method', " ..
     "'modules/" .. mod.name .. ".html#" .. item.name .. "');")
