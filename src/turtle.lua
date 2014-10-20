@@ -218,3 +218,24 @@
 -- @function craft
 -- @int quantity The number of items to craft.
 -- @treturn bool success
+
+---------
+-- Inspects in front of the turtle, returning information
+-- about the block.
+-- @function inspect
+-- @treturn bool success
+-- @treturn table|string data or error message.
+
+---------
+-- Inspects above the turtle, returning information
+-- about the block.
+-- @function inspectUp
+-- @treturn bool success
+-- @treturn table|string data or error message.
+
+---------
+-- Inspects below the turtle, returning information
+-- about the block.
+-- @function inspectDown
+-- @treturn bool success
+-- @treturn table|string data or error message.
