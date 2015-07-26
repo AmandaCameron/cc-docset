@@ -8,6 +8,7 @@ Contributing.
 -------------
 
 Contributions are welcome, however keep in mind the following:
+
   * Only core CC APIs and peripherals will be accepted, no user-extensions.
   * Proper spelling and grammer should be done as best as you can.
   * Deprecated functions / APIs (as of the latest stable release) should be omitted.
@@ -16,7 +17,8 @@ Contributions are welcome, however keep in mind the following:
 With that in mind, all you need to do is install the lsqlite3 and ldoc luarocks packages, and then run the ./make-docs.sh to fill in the .docset folder in the repo.  Currently, this assumes a unix/linux work environment, however PRs to add a windows .bat script are welcome.
 
 To get started, you'll need to have cloned this repo, then ran this in the repo's cloned location:
-  > git submodule init
-  > git submodule update
+
+    git submodule init
+    git submodule update
 
 This will pull in the ldoc-dash submodule, and thus have given you everything needed to build the docset.
